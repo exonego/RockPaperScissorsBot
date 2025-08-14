@@ -26,6 +26,6 @@ def load_config(path: str | None = None) -> Config:
     return Config(
         bot=TgBot(token=env("BOT_TOKEN")),
         log=LogSettings(
-            level=env("LOG_LEVEL"), format=env("LOG_FORMAT"), style=env("LOG_SYLE")
+            level=env("LOG_LEVEL"), format=env("LOG_FORMAT"), style=env("LOG_STYLE")
         ),
     )
